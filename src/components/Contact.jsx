@@ -8,35 +8,36 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-24 px-6 md:px-12 bg-beige relative overflow-hidden"
+      className="w-full py-32 px-6 md:px-12 bg-beige relative overflow-hidden"
     >
-      <div className="absolute top-[10%] left-[-5%] w-96 h-96 bg-cream rounded-full blur-[80px] -z-10"></div>
-
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16">
-        <div className="flex-1">
-          <h2 className="text-primary font-bold tracking-widest uppercase mb-4 text-sm">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-20">
+        <div className="flex-1 pr-0 lg:pr-10">
+          <div className="w-12 h-px bg-primary mb-6"></div>
+          <h2 className="text-primary font-semibold tracking-[0.2em] uppercase mb-6 text-xs">
             {sectionTitle}
           </h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-ink tracking-tight mb-6">
+          <h3 className="text-4xl md:text-5xl font-serif text-ink tracking-tight mb-8 leading-[1.1]">
             {heading}
           </h3>
-          <p className="text-lg text-secondary font-medium mb-12 max-w-md leading-relaxed">
+          <p className="text-lg text-secondary font-light mb-16 max-w-md leading-relaxed">
             {description}
           </p>
 
-          <div className="space-y-8">
+          <div className="space-y-10">
             {info.map((item, idx) => {
               const IconComp = LucideIcons[item.iconType] || LucideIcons.Info;
               return (
-                <div key={idx} className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-cream flex justify-center items-center shadow-sm text-primary">
-                    <IconComp className="w-6 h-6" />
+                <div key={idx} className="flex items-center gap-6 group">
+                  <div className="w-14 h-14 rounded-full border border-primary/20 flex justify-center items-center text-primary group-hover:bg-primary group-hover:text-cream transition-all duration-300">
+                    <IconComp className="w-5 h-5" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-secondary uppercase tracking-wider mb-1">
+                    <h4 className="text-[11px] font-bold text-secondary/60 uppercase tracking-[0.1em] mb-1">
                       {item.type}
                     </h4>
-                    <p className="text-lg font-bold text-ink">{item.value}</p>
+                    <p className="text-lg font-serif text-ink tracking-wide">
+                      {item.value}
+                    </p>
                   </div>
                 </div>
               );
@@ -44,43 +45,39 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex-1 bg-cream p-8 md:p-12 rounded-[40px] shadow-2xl border border-primary/10">
-          <form
-            className="flex flex-col gap-6"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <div className="flex flex-col gap-2">
-              <label className="text-sm font-bold text-ink ml-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="John Doe"
-                className="w-full bg-beige/50 border border-primary/20 rounded-2xl px-6 py-4 outline-none focus:border-primary focus:bg-beige transition-colors font-medium text-ink"
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label className="text-sm font-bold text-ink ml-2">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                placeholder="+213 555 000 000"
-                className="w-full bg-beige/50 border border-primary/20 rounded-2xl px-6 py-4 outline-none focus:border-primary focus:bg-beige transition-colors font-medium text-ink"
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label className="text-sm font-bold text-ink ml-2">Message</label>
-              <textarea
-                placeholder="How can we help you?"
-                rows={4}
-                className="w-full bg-beige/50 border border-primary/20 rounded-2xl px-6 py-4 outline-none focus:border-primary focus:bg-beige transition-colors font-medium text-ink resize-none"
-              ></textarea>
-            </div>
-            <button className="bg-primary text-cream hover:opacity-90 transition-all font-bold text-lg py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform mt-2">
-              Send Message
-            </button>
-          </form>
+        <div className="flex-1">
+          <div className="bg-cream p-10 md:p-14 rounded-[40px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] border border-primary/10 w-full relative">
+            <div className="absolute top-0 right-10 w-20 h-px bg-primary/30"></div>
+            <form
+              className="flex flex-col gap-8"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <div className="flex flex-col gap-3">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full bg-transparent border-b border-primary/20 pb-4 outline-none focus:border-primary transition-colors font-light text-ink placeholder:text-secondary/50 rounded-none"
+                />
+              </div>
+              <div className="flex flex-col gap-3">
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="w-full bg-transparent border-b border-primary/20 pb-4 outline-none focus:border-primary transition-colors font-light text-ink placeholder:text-secondary/50 rounded-none"
+                />
+              </div>
+              <div className="flex flex-col gap-3">
+                <textarea
+                  placeholder="How can we help you?"
+                  rows={3}
+                  className="w-full bg-transparent border-b border-primary/20 pb-4 outline-none focus:border-primary transition-colors font-light text-ink placeholder:text-secondary/50 resize-none rounded-none"
+                ></textarea>
+              </div>
+              <button className="bg-ink text-cream hover:bg-secondary transition-all font-medium text-sm py-5 px-10 rounded-full w-full mt-6 tracking-wide uppercase">
+                Send Request
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
