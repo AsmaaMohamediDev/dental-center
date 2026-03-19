@@ -11,8 +11,12 @@ const About = () => {
         <div className="flex-1 w-full order-2 md:order-1 relative">
           <div className="absolute inset-y-8 -inset-x-8 bg-beige rounded-r-full -z-10 translate-x-[-10vw]"></div>
           <div className="relative w-full aspect-square md:aspect-[3/4] max-w-md mx-auto">
-            <div className="w-full h-full bg-white rounded-t-full rounded-b-none overflow-hidden shadow-sm relative z-10 flex flex-col items-center justify-center text-primary/30 font-serif text-3xl italic border-x border-t border-primary/20 p-8 text-center">
-              <span>Sanctuary of Healing</span>
+            <div className="w-full h-full rounded-t-full rounded-b-none overflow-hidden shadow-sm relative z-10 border-x border-t border-primary/20">
+              <img
+                src="/about-image.png"
+                alt="Sanctuary of Healing Clinic Interior"
+                className="w-full h-full object-cover scale-[1.03] hover:scale-100 transition-transform duration-[1.5s] ease-out origin-center"
+              />
             </div>
           </div>
         </div>
