@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -10,10 +12,12 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <About />
+        <Contact />
       </main>
-      <footer className="w-full py-12 text-center text-secondary border-t border-primary/10 bg-cream">
+      <footer className="w-full py-12 text-center text-cream border-t border-primary/10 bg-ink">
         <p className="font-semibold text-sm">
-          © 2026 DentaCare Center. All rights reserved.
+          © 2026 DentaCare Center, Algiers. All rights reserved.
         </p>
       </footer>
     </div>
