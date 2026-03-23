@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import ServicePage from "./pages/ServicePage";
 import SmileGallery from "./pages/SmileGallery";
 import PatientInfo from "./pages/PatientInfo";
+import DiscoverOurClinicPage from "./pages/DiscoverOurClinicPage";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route
+          path="/discover-our-clinic"
+          element={<DiscoverOurClinicPage />}
+        />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services/:id" element={<ServicePage />} />
         <Route path="/gallery" element={<SmileGallery />} />

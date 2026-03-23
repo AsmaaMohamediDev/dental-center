@@ -1,7 +1,7 @@
 import React from "react";
 import { pageContent } from "../data/content";
 
-const Hero = () => {
+const Hero = ({ onSecondaryClick }) => {
   const { title, highlight, subtitle, primaryButton, secondaryButton, stats } =
     pageContent.hero;
 
@@ -22,10 +22,14 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-6">
-          <button className="bg-ink text-cream hover:bg-secondary transition-all duration-300 font-medium py-4 px-10 rounded-full shadow-[0_20px_40px_-10px_rgba(35,33,31,0.3)] hover:-translate-y-1 transform w-full sm:w-auto tracking-wide">
+          <button type="button" className="bg-ink text-cream hover:bg-secondary transition-all duration-300 font-medium py-4 px-10 rounded-full shadow-[0_20px_40px_-10px_rgba(35,33,31,0.3)] hover:-translate-y-1 transform w-full sm:w-auto tracking-wide">
             {primaryButton}
           </button>
-          <button className="bg-transparent border border-primary text-secondary hover:bg-primary/5 transition-all duration-300 font-medium py-4 px-10 rounded-full w-full sm:w-auto tracking-wide">
+          <button
+            type="button"
+            onClick={onSecondaryClick}
+            className="bg-transparent border border-primary text-secondary hover:bg-primary/5 transition-all duration-300 font-medium py-4 px-10 rounded-full w-full sm:w-auto tracking-wide"
+          >
             {secondaryButton}
           </button>
         </div>

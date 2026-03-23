@@ -76,6 +76,53 @@ export const pageContent = {
       }
     ]
   },
+  discoverOurClinic: {
+    hero: {
+      title: "Welcome to NOVA Dental Clinic",
+      subtitle:
+        "Experience world-class dental care in the heart of Algiers. We combine cutting-edge technology with personalized comfort to redefine your dental experience.",
+    },
+    ourPhilosophy:
+      "At NOVA Dental Clinic, our mission goes beyond just treating teeth; we aim to transform the way you feel about visiting the dentist. We understand that dental anxiety is real, which is why we've designed every aspect of our clinic to feel less like a medical facility and more like a calming retreat.\n\nOur approach is rooted in minimally invasive techniques and comprehensive care. By taking the time to listen to your concerns and goals, we craft personalized treatment plans that ensure lasting oral health and a smile you can be genuinely proud of.",
+    clinicHighlights: [
+      {
+        title: "State-of-the-Art Technology",
+        description:
+          "From 3D imaging to painless laser dentistry, we invest in the latest tools to ensure precise diagnoses and comfortable treatments.",
+      },
+      {
+        title: "Relaxing Atmosphere",
+        description:
+          "Enjoy a soothing environment designed to reduce stress, complete with comfortable seating and a warm, welcoming team.",
+      },
+      {
+        title: "Uncompromising Hygiene",
+        description:
+          "Your safety is our priority. We adhere to the strictest sterilization protocols to provide a clean and secure environment.",
+      },
+    ],
+    team: [
+      {
+        name: "Dr. Amina Mansouri",
+        specialty: "Lead Implantologist",
+        bio: "With over 10 years of experience in restorative dentistry, Dr. Amina specializes in dental implants and complex full-mouth rehabilitations. Her gentle demeanor ensures patients feel entirely at ease.",
+        imageUrl:
+          "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800",
+      },
+      {
+        name: "Dr. Karim Haddad",
+        specialty: "Aesthetic Dentist",
+        bio: "Dr. Karim is passionate about the art of the smile. Combining his keen eye for aesthetics with advanced ceramic techniques, he crafts natural-looking veneers and complete smile makeovers.",
+        imageUrl:
+          "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800",
+      },
+    ],
+    bottomCta: {
+      headline: "Ready to Transform Your Smile?",
+      subheadline:
+        "Book your consultation today and take the first step towards exceptional dental care.",
+    },
+  },
   contact: {
     sectionTitle: "Contact Us",
     heading: "Request Your Appointment",
