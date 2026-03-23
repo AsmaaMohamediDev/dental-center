@@ -11,7 +11,17 @@
 
   --font-sans: "Inter", system-ui, sans-serif;
   --font-serif: "Playfair Display", Georgia, serif;
+
+  --animate-marquee: marquee 35s linear infinite;
 }
+
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 1rem)); } /* Accounting for half scale + gap */
+  }
+}
+
 
 @layer base {
   body {

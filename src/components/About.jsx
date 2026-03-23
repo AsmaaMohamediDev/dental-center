@@ -5,8 +5,8 @@ const About = () => {
   const { sectionTitle, heading, paragraphs } = pageContent.about;
 
   return (
-    <section id="about" className="w-full py-32 px-6 md:px-12 bg-cream pb-48">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-24">
+    <section id="about" className="w-full py-16 md:py-32 px-6 md:px-12 bg-cream pb-24 md:pb-48">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-24">
         {/* Soft edge-to-edge bleed feel using structural overlapping */}
         <div className="flex-1 w-full order-2 md:order-1 relative">
           <div className="absolute inset-y-8 -inset-x-8 bg-beige rounded-r-full -z-10 translate-x-[-10vw]"></div>

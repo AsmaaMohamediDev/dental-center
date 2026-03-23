@@ -8,9 +8,9 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="w-full py-32 px-6 md:px-12 bg-beige relative"
+      className="w-full py-16 md:py-32 px-6 md:px-12 bg-beige relative"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-start">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 md:gap-20 items-start">
         {/* Sticky Left Sidebar for Section Title to break symmetry */}
         <div className="md:w-1/3 md:sticky top-32 z-10 pr-8">
           <div className="w-12 h-px bg-primary mb-6"></div>

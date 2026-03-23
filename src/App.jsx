@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import About from "./components/About";
+import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Services />
         <About />
+        <Testimonials />
         <Contact />
       </main>
       <footer className="w-full py-12 text-center text-cream border-t border-primary/10 bg-ink">

@@ -6,7 +6,7 @@ const Hero = () => {
     pageContent.hero;
 
   return (
-    <section className="w-full min-h-[90vh] bg-cream flex flex-col md:flex-row items-center px-6 md:px-12 py-12 md:py-20 overflow-hidden relative border-b border-primary/10">
+    <section className="w-full min-h-[90vh] bg-cream flex flex-col md:flex-row items-center px-6 md:px-12 py-10 md:py-20 overflow-hidden relative border-b border-primary/10">
       {/* Soft Diffused Background Glow */}
       <div className="absolute top-[-10%] right-[10%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] -z-10"></div>
 
@@ -30,7 +30,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="mt-12 flex gap-12 items-center flex-wrap pt-8 border-t border-primary/10">
+        <div className="mt-12 flex gap-6 md:gap-12 items-center flex-wrap pt-8 border-t border-primary/10">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col gap-1">
               <p className="text-4xl font-serif text-ink">{stat.value}</p>

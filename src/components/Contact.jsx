@@ -8,9 +8,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-32 px-6 md:px-12 bg-beige relative overflow-hidden"
+      className="w-full py-16 md:py-32 px-6 md:px-12 bg-beige relative overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-20">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
         <div className="flex-1 pr-0 lg:pr-10">
           <div className="w-12 h-px bg-primary mb-6"></div>
           <h2 className="text-primary font-semibold tracking-[0.2em] uppercase mb-6 text-xs">
@@ -46,7 +46,7 @@ const Contact = () => {
         </div>
 
         <div className="flex-1">
-          <div className="bg-cream p-10 md:p-14 rounded-[40px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] border border-primary/10 w-full relative">
+          <div className="bg-cream p-6 sm:p-10 md:p-14 rounded-[40px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] border border-primary/10 w-full relative">
             <div className="absolute top-0 right-10 w-20 h-px bg-primary/30"></div>
             <form
               className="flex flex-col gap-8"
