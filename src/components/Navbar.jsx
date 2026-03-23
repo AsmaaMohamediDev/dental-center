@@ -38,6 +38,9 @@ const Navbar = () => {
         <Link to="/gallery" className="hover:text-primary transition-colors">
           Gallery
         </Link>
+        <Link to="/patient-info" className="hover:text-primary transition-colors">
+          FAQ
+        </Link>
       </div>
       <button className="hidden md:block bg-primary text-cream hover:opacity-90 transition-all font-semibold py-3 px-6 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform">
         Book Appointment
@@ -60,6 +63,9 @@ const Navbar = () => {
           </a>
           <Link to="/gallery" className="text-lg font-semibold text-secondary hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
             Gallery
+          </Link>
+          <Link to="/patient-info" className="text-lg font-semibold text-secondary hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
+            FAQ
           </Link>
           <button className="bg-primary text-cream hover:opacity-90 transition-all font-semibold py-4 px-8 rounded-full shadow-lg mt-4 w-[85%] max-w-sm">
             Book Appointment

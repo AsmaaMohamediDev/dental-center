@@ -187,5 +187,56 @@ export const pageContent = {
       beforeImageUrl: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800",
       afterImageUrl: "https://images.unsplash.com/photo-1570612861542-284f4c12e75f?auto=format&fit=crop&q=80&w=800"
     }
-  ]
+  ],
+  patientInfo: {
+    pageIntro: "Welcome to NOVA Dental Clinic. We want every visit to feel effortless and stress-free. Whether it's your very first appointment or a routine follow-up, this page will guide you through everything you need to know — from what to expect on arrival to answers to the questions we hear most often.",
+    firstVisitSteps: [
+      {
+        stepNumber: 1,
+        title: "Schedule Your Visit",
+        description: "Call us, send an email, or use our online booking form to reserve a time that suits your schedule. Our team will confirm your appointment within the hour."
+      },
+      {
+        stepNumber: 2,
+        title: "Arrive & Register",
+        description: "Please arrive 10 minutes early to complete a short medical-history form. Bring a valid ID and any recent dental records or X-rays you may have."
+      },
+      {
+        stepNumber: 3,
+        title: "Comprehensive Examination",
+        description: "Our dentist will perform a thorough oral exam using digital imaging, discuss your concerns, and create a personalized treatment plan tailored to your needs."
+      },
+      {
+        stepNumber: 4,
+        title: "Begin Your Treatment",
+        description: "Once you approve the plan, we can start treatment immediately or schedule follow-up sessions at your convenience. Comfort and transparency are our priorities."
+      }
+    ],
+    faqs: [
+      {
+        question: "Do I need to bring anything to my first appointment?",
+        answer: "Please bring a valid photo ID, your insurance card if applicable, and any recent dental X-rays or records from a previous dentist. This helps us create the most accurate treatment plan for you."
+      },
+      {
+        question: "What payment methods do you accept?",
+        answer: "We accept cash, major credit and debit cards, and bank transfers. We also offer flexible installment plans for extensive treatments so you can focus on your health without financial stress."
+      },
+      {
+        question: "Is dental treatment at NOVA painful?",
+        answer: "Absolutely not. Patient comfort is our top priority. We use advanced local anesthesia, gentle techniques, and offer sedation options for anxious patients. Most of our patients are pleasantly surprised by how comfortable the experience is."
+      },
+      {
+        question: "How long does a typical appointment last?",
+        answer: "A standard check-up and cleaning takes approximately 45 minutes. More complex procedures vary, but we always inform you of the expected duration before we begin so you can plan your day accordingly."
+      },
+      {
+        question: "Can I book appointments for my children?",
+        answer: "Of course! We welcome patients of all ages. Our team is experienced in pediatric dentistry and creates a fun, relaxed atmosphere to help young patients feel at ease during their visit."
+      },
+      {
+        question: "What happens if I need to cancel or reschedule?",
+        answer: "We understand that plans change. We kindly ask for at least 24 hours' notice so we can offer the slot to another patient. You can reschedule easily by phone or through our website."
+      }
+    ]
+  }
 };

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import ServicePage from "./pages/ServicePage";
 import SmileGallery from "./pages/SmileGallery";
+import PatientInfo from "./pages/PatientInfo";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services/:id" element={<ServicePage />} />
         <Route path="/gallery" element={<SmileGallery />} />
+        <Route path="/patient-info" element={<PatientInfo />} />
       </Routes>
       <footer className="w-full py-12 text-center text-cream border-t border-primary/10 bg-ink">
         <p className="font-semibold text-sm">
