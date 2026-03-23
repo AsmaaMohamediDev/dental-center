@@ -153,5 +153,39 @@ export const pageContent = {
       ],
       cta: "Book your restorative consultation today to discuss your options for a stronger, healthier smile."
     }
-  }
+  },
+  gallery: [
+    {
+      id: 1,
+      treatmentName: "Complete Smile Makeover",
+      challenge: "Chipped central incisors and severe discoloration from years of coffee consumption.",
+      solution: "Custom porcelain veneers combined with professional laser teeth whitening.",
+      beforeImageUrl: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800",
+      afterImageUrl: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      id: 2,
+      treatmentName: "Aesthetic Dental Implants",
+      challenge: "Missing lateral incisor and moderate spacing issues causing bite misalignment.",
+      solution: "Placement of a titanium implant paired with an ultra-realistic ceramic crown.",
+      beforeImageUrl: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800",
+      afterImageUrl: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      id: 3,
+      treatmentName: "Invisible Orthodontics",
+      challenge: "Significant crowding in the lower arch and a noticeable overjet in the upper teeth.",
+      solution: "A 14-month custom clear aligner therapy followed by professional contouring.",
+      beforeImageUrl: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800",
+      afterImageUrl: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      id: 4,
+      treatmentName: "Full Mouth Restoration",
+      challenge: "Worn enamel and multiple failing composite fillings causing severe sensitivity.",
+      solution: "A complete rehabilitation utilizing high-strength ceramic crowns and bridges.",
+      beforeImageUrl: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800",
+      afterImageUrl: "https://images.unsplash.com/photo-1570612861542-284f4c12e75f?auto=format&fit=crop&q=80&w=800"
+    }
+  ]
 };
