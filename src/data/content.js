@@ -62,7 +62,7 @@ export const pageContent = {
         iconType: "MapPin",
       },
       { type: "Phone", value: "+213 555 12 34 56", iconType: "Phone" },
-      { type: "Email", value: "contact@dentacare.dz", iconType: "Mail" },
+      { type: "Email", value: "contact@novadentalclinic.dz", iconType: "Mail" },
       {
         type: "Hours",
         value: "Sat - Thu, 8:30 AM - 6:00 PM",

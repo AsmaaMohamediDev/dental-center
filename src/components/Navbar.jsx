@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <nav className="w-full flex items-center justify-between py-6 px-6 md:px-12 border-b border-primary/20 bg-cream sticky top-0 z-50">
       <div className="flex items-center gap-3">
-        <Stethoscope className="w-8 h-8 text-primary" />
-        <span className="text-2xl font-bold tracking-tight text-ink uppercase">
-          DentaCare
+        <img src="/logo.png" alt="NOVA Dental Clinic Logo" className="w-10 h-10 object-contain" />
+        <span className="text-xl md:text-2xl font-bold tracking-tight text-ink uppercase leading-none">
+          NOVA <br className="hidden md:block" /><span className="text-sm md:text-base text-primary/80 font-semibold tracking-wider">Dental Clinic</span>
         </span>
       </div>
 

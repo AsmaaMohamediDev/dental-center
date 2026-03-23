@@ -19,7 +19,7 @@ function App() {
       </main>
       <footer className="w-full py-12 text-center text-cream border-t border-primary/10 bg-ink">
         <p className="font-semibold text-sm">
-          © 2026 DentaCare Center, Algiers. All rights reserved.
+          © 2026 NOVA Dental Clinic, Algiers. All rights reserved.
         </p>
       </footer>
     </div>
