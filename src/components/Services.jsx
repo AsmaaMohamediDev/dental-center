@@ -1,6 +1,7 @@
 import React from "react";
 import { pageContent } from "../data/content";
 import * as LucideIcons from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const { sectionTitle, heading, items } = pageContent.services;
@@ -36,9 +37,10 @@ const Services = () => {
             const offsetClass = idx % 2 !== 0 ? "sm:translate-y-16" : "";
 
             return (
-              <div
+              <Link
+                to={`/services/${item.id}`}
                 key={item.id}
-                className={`group p-10 rounded-[40px] bg-cream shadow-sm hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 transition-all duration-500 cursor-pointer relative overflow-hidden border border-primary/5 ${offsetClass}`}
+                className={`group block p-10 rounded-[40px] bg-cream shadow-sm hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 transition-all duration-500 cursor-pointer relative overflow-hidden border border-primary/5 ${offsetClass}`}
               >
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex flex-col justify-center items-center mb-10 group-hover:bg-primary transition-colors duration-500">
                   <IconComponent
@@ -56,7 +58,7 @@ const Services = () => {
                   <span>Explore</span>
                   <LucideIcons.ArrowRight className="w-4 h-4" />
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

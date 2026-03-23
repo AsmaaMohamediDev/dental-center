@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { pageContent } from "../data/content";
 
 const About = () => {
@@ -34,12 +35,12 @@ const About = () => {
               <p key={idx}>{text}</p>
             ))}
           </div>
-          <button className="mt-12 group flex items-center gap-4 text-ink hover:text-primary transition-colors font-medium tracking-wide uppercase text-sm border-b border-ink hover:border-primary pb-1">
-            Meet Our Team
+          <Link to="/about" className="mt-12 group inline-flex items-center gap-4 text-ink hover:text-primary transition-colors font-medium tracking-wide uppercase text-sm border-b border-ink hover:border-primary pb-1">
+            Meet Our Team The Details
             <span className="transform group-hover:translate-x-1 transition-transform">
               →
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>
